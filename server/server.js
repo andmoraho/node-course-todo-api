@@ -109,7 +109,7 @@ app.patch('/todos/:id', authenticate, (req, res) => {
         res.status(200).send({ todo });
     }).catch((err) => {
         res.status(400).send();
-    })
+    });
 });
 
 //Users
